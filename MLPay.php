@@ -3,6 +3,9 @@
 global $LAN;
 function getErrMsg(){
 global $LAN;
+if (!isset($LAN)){
+	$LAN = 1;
+}
 return [
 	"unexpected_result" => $LAN ? "UNEXPECTED_RESULT:":"非预期的返回结果:",
 	"need_param" => $LAN ? "NEED_PARAM:":"需要必填字段:",
@@ -15,6 +18,9 @@ return [
 
 function getRespErr(){
 	global $LAN;
+	if (!isset($LAN)){
+		$LAN = 1;
+	}
 	return [
 		0 => $LAN ? 'OK':"成功",
 		1 => $LAN ? 'APP_INVALID':'根据app_id找不到对应的APP或者app_sign不正确',

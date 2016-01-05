@@ -178,6 +178,7 @@ class MLPayApi {
 	}
 	
 }
+/*
 	const CH = 0;
 	const EN = 1;
 	global $LAN;//pred set $LAN
@@ -202,4 +203,5 @@ class MLPayApi {
 	//$result = MLPayApi::record($data);
 	$result->msg = getRespErr()[$result->code];
 	print_r($result);
+*/
 ?>

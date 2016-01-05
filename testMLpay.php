@@ -1,5 +1,5 @@
 <?php
-require "MLPay.php";
+	require "MLPay.php";
 	const CH = 0;
 	const EN = 1;
 	global $LAN;//pred set $LAN
@@ -12,7 +12,9 @@ require "MLPay.php";
 	$data["channel"] = "ali_web";
 	$data["totalFee"] = 1;
 	$data["subject"] = "it will be ok!";
-	$data["extras"] = "None";
+	$extra = ["a"=>1,"b"=>2];
+	$jextra = json_encode($exrta);
+	$data["extras"] = $jextra;
 	$data["returnUrl"] = "http://www.qq.com";
 	$data["billTimeout"] = 360;
 	$data["showUrl"] = "http://www.qq.com";

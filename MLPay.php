@@ -73,6 +73,7 @@ class MLRESTUtil {
 				case "post":
 					curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 					curl_setopt($ch, CURLOPT_POST, true);
+					print_r(json_encode($data));die();
 					curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data)); //POST数据
 					curl_setopt($ch, CURLOPT_URL, $url);
 					break;

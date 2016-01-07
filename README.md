@@ -18,7 +18,7 @@ MLPay.php 使用方法
 4. 返回值包含在$result中,结构如下:
     {
         code:0,
-	 msg:"OK",
+        msg:"OK",
         err:"",
         id:"",
         ali_app:"",
@@ -44,8 +44,22 @@ MLPay.php 使用方法
 二、订单查询
 1. require "MLPay.php";
 2. 填充数组$data, 内容包括
-   必须: appid: 由MaxLeap 后台获取
-         token: 由MaxLeap 后台获取
-         billNum: 订单号
+   必须: appid: 由MaxLeap 后台获取,类型:String
+         token: 由MaxLeap 后台获取,类型:String
+         billNum: 订单号,类型:String
 3. 静态调用 $result = MLPayApi::record($data);
-4. 返回值包含在$result中
+4. 返回值包含在$result中,结构如下:
+   {
+     code:0,//0为正常，1为appid不存在
+     results:[{
+        "billNum": "a0afb0d7-e26f-4e94-bb7b-8265fc1492b7",
+        "channel": "ali_web“,
+        status:"created",//string,分别为created未支付，sucess已支付，refund已退款。
+        "createdTime":121111121121,//timstamp
+        "endTime":12132132131231,//timstamp
+        "totalFee": 1,
+        "extras":{
+            "1": "2"
+        }
+    }]
+  }

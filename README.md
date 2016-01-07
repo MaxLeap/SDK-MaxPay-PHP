@@ -63,3 +63,5 @@ MLPay.php 使用方法
         }
     }]
   }
+
+参考程序可运行testMLpay.php, 运行方式 php testMLpay.php

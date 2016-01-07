@@ -17,8 +17,8 @@
 	$data["extras"] = $arrayName;
 	$data["returnUrl"] = "http://www.qq.com";
 	$data["billTimeout"] = 360;
-	$data["showUrl"] = "http://www.qq.com";
-	$data["qrPayMode"] = 0;
+	#$data["showUrl"] = "http://www.qq.com";
+	#$data["qrPayMode"] = 0;
 	$result = MLPayApi::bill($data);
 
 	//records

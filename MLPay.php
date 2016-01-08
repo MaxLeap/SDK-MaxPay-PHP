@@ -44,8 +44,10 @@ class MLRESTErrMsg {
 }
 class MLRESTUtil {
 	static final public function getApiUrl() {
-		$domain = "apiuat.maxleap.com";// for uat test
-		return "http://" . $domain;
+		//$domain = "apiuat.maxleap.com";// for uat test
+		$domain = "https://webuat.maxleap.cn/maxpay"; //for prod 
+		//return "http://" . $domain;
+		return $domain;
 	}
 	static final public function request($url, $method, array $data, $timeout) {
 		try {

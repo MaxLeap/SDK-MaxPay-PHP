@@ -1,4 +1,8 @@
 <?php
+/*
+##### _Author: Kevin
+##### _Github: https://github.com/lalamini
+*/
 
 global $LAN;
 function getErrMsg(){

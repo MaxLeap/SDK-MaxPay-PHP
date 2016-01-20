@@ -49,7 +49,7 @@ class MLRESTErrMsg {
 class MLRESTUtil {
 	static final public function getApiUrl() {
 		//$domain = "http://apiuat.maxleap.com";// for uat test
-		$domain = "http://api.maxleap.cn/2.0/maxpay"; //for prod 
+		$domain = "http://api.maxleap.cn"; //for prod 
 		return $domain;
 	}
 	static final public function request($url, $method, array $data, $timeout) {

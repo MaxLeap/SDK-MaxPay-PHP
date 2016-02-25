@@ -9,7 +9,9 @@
 	//bill
 	$data["billNum"] = "112233";
 	$data["appid"] = "568a12086e912100017722e5";
-        $data["token"] = "1eHwAapfyKgRufiBaoKNf63vyuCt_hHlkDdGncfGhBs";
+    $data["token"] = "1eHwAapfyKgRufiBaoKNf63vyuCt_hHlkDdGncfGhBs";
+	//$data["appid"] = "56cd4ecc667a230001a97e11";
+	//$data["token"] = "F9CYE1XYlc9u7W4VZmuub0jcFsCktBHllbxWhHr-l5k";
 	if (isset($argv[1]) && $argv[1] == "bill"){
 		$data["channel"] = $argv[2]?$argv[2]:null;
 		$data["totalFee"] = 1;

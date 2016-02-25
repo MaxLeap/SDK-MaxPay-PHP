@@ -8,8 +8,8 @@
 	$data = array();
 	//bill
 	$data["billNum"] = "112233";
-	$data["appid"] = "56936325a5ff7f0001a27b89";
-        $data["token"] = "CchNJ1A-yo9X6nY2HNaCU3yJ3qCtTxHljTFWhHr-l5k";
+	$data["appid"] = "568a12086e912100017722e5";
+    $data["token"] = "1eHwAapfyKgRufiBaoKNf63vyuCt_hHlkDdGncfGhBs";
 	if (isset($argv[1]) && $argv[1] == "bill"){
 		$data["channel"] = $argv[2]?$argv[2]:null;
 		$data["totalFee"] = 1;

@@ -51,8 +51,8 @@ class MLRESTUtil {
 		//$domain = "apiuat.maxleap.com";// for uat test
 		//$domain = "apidev.maxleap.com";//for dev test
 		
-		$domain = "https://webuat.maxleap.cn/maxpay"; //for prod 
-		return "http://" . $domain;
+		$domain = "http://api.maxleap.cn"; //for prod 
+		return $domain;
 		//return $domain;
 	}
 	static final public function request($url, $method, array $data, $timeout) {

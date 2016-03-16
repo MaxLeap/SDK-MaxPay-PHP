@@ -18,7 +18,7 @@
 		$data["subject"] = "it will be ok!";
 		$arrayName = array('a' => 1, 'b' => 2);
 		$data["extras"] = $arrayName;
-		$data["returnUrl"] = "http://www.qq.com";
+		$data["returnUrl"] = "http://101.231.204.84:11006/ACPTest/FrontRcvResponse.do";
 		$data["billTimeout"] = 360;
 		//$data["showUrl"] = "http://www.qq.com";
 		//$data["qrPayMode"] = 0;
